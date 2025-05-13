@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="public/styles.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Подключаем React -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Подключаем Babel для поддержки JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Подключаем наши компоненты -->
+    <script type="text/babel" src="src/api/todos.js"></script>
+    <script type="text/babel" src="src/components/TodoItem.js"></script>
+    <script type="text/babel" src="src/components/TodoList.js"></script>
+    <script type="text/babel" src="src/components/TodoForm.js"></script>
+    <script type="text/babel" src="src/App.js"></script>
+    <script type="text/babel" src="src/index.js"></script>
+  </body>
+</html>
