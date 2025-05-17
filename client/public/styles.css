@@ -23,9 +23,11 @@ body {
 }
 
 h1 {
+  font-family: "Great Vibes", cursive;
   text-align: center;
   margin-bottom: 20px;
   color: #2c3e50;
+  font-size: 3rem;
 }
 
 /* Стили для формы */

@@ -3,7 +3,7 @@
  */
 const TodoAPI = {
   // Базовый URL API
-  baseUrl: "http://localhost:3001/api/todos",
+  baseUrl: "/api/todos",
 
   /**
    * Получить все задачи

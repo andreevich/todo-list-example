@@ -5,9 +5,7 @@
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
-    "dev:server": "nodemon server/index.js",
-    "dev:client": "cd client && npx serve -s .",
-    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev": "nodemon server/index.js",
     "init-db": "node server/db/init.js"
   },
   "dependencies": {
@@ -16,8 +14,6 @@
     "sqlite3": "^5.1.6"
   },
   "devDependencies": {
-    "concurrently": "^8.2.0",
-    "nodemon": "^3.0.1",
-    "serve": "^14.2.0"
+    "nodemon": "^3.0.1"
   }
 }
