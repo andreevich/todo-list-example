@@ -108,11 +108,11 @@ const Todo = {
       // Преобразуем boolean в 0/1 для SQLite
       const completedValue = completed ? 1 : 0;
 
-      const sql = "UPDATE todos SET completed = ? WHERE id = ?";
+      const sql = `UPDATE todos SET completed = ${completedValue}  WHERE id = ${id}`;
 
       console.log(">>>", id, updates);
 
-      db.run(sql, [completedValue, id], function (err) {
+      db.run(sql, [], function (err) {
         if (err) {
           reject(err);
           return;
